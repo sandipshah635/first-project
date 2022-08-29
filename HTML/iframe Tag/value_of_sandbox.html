@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> All values of Sandbox </title>
+
+<body>
+
+
+<!--sandbox empty vaya pani file support garxa -->
+<iframe src="test.html" sandbox> </iframe>
+
+<!-- allow-same-origin value nw deeya ni hunxa sandbox 
+mw to access same origin files-->
+<!-- Note:  All others value should be given if we declare
+ sandbox attribute in iframe tag to access -->
+
+<iframe src="example.html" sandbox> </iframe>
+<!-- Yo  support gardae nw kinaw ki example.html mw anchor
+tag mw hami ley target mw _top value deeya ko xau so teyhi
+vayraw access garnaw lae hami ley allow-top-navigation value 
+of sandbox use garnu parxa-->
+
+<iframe src="example.html" 
+sandbox="allow-top-navigation"> </iframe>
+
+
+<!-- Use of allow-script value of sandbox-->
+<!-- It re-enables the script -->
+
+<iframe src="script.html" sandbox="allow-scripts">
+
+</iframe>
+
+
+<!-- Use of allow-popups value of Sandbox -->
+<!-- This is used with target attribute of _blank value 
+of Anchor tag  -->
+
+
+<iframe src="target_blank.html" sandbox="allow-popups">    
+
+</iframe>
+
+
+
+
+
+</body>
+
+
+</head>
+
+
+</html>
